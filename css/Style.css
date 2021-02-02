@@ -1,0 +1,86 @@
+@font-face {
+  font-family: IRANSansBold;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../assets/fonts/eot/IRANSansWeb_Bold.eot");
+  src: url("../assets/fonts/eot/IRANSansWeb_Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/woff2/IRANSansWeb_Bold.woff2") format("woff2"), url("../assets/fonts/woff/IRANSansWeb_Bold.woff") format("woff"), url("../assets/fonts/ttf/IRANSansWeb_Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/eot/IRANSansWeb.eot");
+  src: url("../assets/fonts/eot/IRANSansWeb.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/woff2/IRANSansWeb.woff2") format("woff2"), url("../assets/fonts/woff/IRANSansWeb.woff") format("woff"), url("../assets/fonts/ttf/IRANSansWeb.ttf") format("truetype");
+}
+
+.topHeader {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topHeader__right ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.topHeader__right ul li {
+  margin: 25px;
+}
+
+.topHeader__right ul li a {
+  display: flex;
+  align-items: center;
+  color: #212121;
+  text-decoration: none;
+}
+
+.topHeader__right ul li a i {
+  margin-right: 10px;
+}
+
+.topHeader__left {
+  direction: ltr;
+}
+
+.topHeader__left .icons {
+  margin: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.topHeader__left .icons span {
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.topHeader__left .icons .facebook a {
+  color: #3b5998;
+}
+
+.topHeader__left .icons .telegram a {
+  color: #0088cc;
+}
+
+.topHeader__left .icons .instagram a {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eeeeee;
+  direction: rtl;
+  font-family: IRANSans;
+}
+/*# sourceMappingURL=Style.css.map */
