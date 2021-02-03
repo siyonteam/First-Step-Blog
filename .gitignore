@@ -1,6 +1,4 @@
-css/Style.scss
-css/_Vars.scss
-css/_Fonts.scss
-css/_TopHeader.scss
+*.scss
 assets/images
 .vscode
+Style.css.map
