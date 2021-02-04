@@ -1,103 +1,143 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/Style.css" />
+        <script>
+            function s() {
+                alert('test');
+            }
+        </script>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/Style.css" />
-</head>
-
-<body>
-    <!-- Top Header Start -->
-    <section id="topHeader">
-        <div class="container">
-            <div class="row">
-                <div class="topHeader">
-                    <div class="topHeader__right">
-                        <ul>
-                            <li>
-                                <a href="#">ثبت نام <i class="fas fa-user-plus"></i></a>
-                            </li>
-                            <div class="loginContainer">
-                                <li class="login">
-                                    <a href="#">ورود<i class="fas fa-sign-in-alt"></i></a>
+    <body>
+        <!-- Top Header Start -->
+        <section id="topHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="topHeader">
+                        <div class="topHeader__right">
+                            <ul>
+                                <li>
+                                    <a href="#"
+                                        >ثبت نام <i class="fas fa-user-plus"></i
+                                    ></a>
                                 </li>
-                                <form action="" class="loginForm">
-                                    <input class="userInput" type="text" placeholder="نام کاربری" />
-                                    <input class="passInput" type="password" placeholder="کلمه عبور" />
-                                    <button class="btn btn-dark loginBtn
-                                            type=" submit">
-                                        ورود
-                                    </button>
-                                </form>
+                                <div class="loginContainer">
+                                    <li class="login">
+                                        <a href="#"
+                                            >ورود<i
+                                                class="fas fa-sign-in-alt"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <!-- Slide login form -->
+                                    <form action="" class="loginForm">
+                                        <input
+                                            class="userInput"
+                                            type="text"
+                                            placeholder="نام کاربری"
+                                        />
+                                        <input
+                                            class="passInput"
+                                            type="password"
+                                            placeholder="کلمه عبور"
+                                        />
+                                        <button
+                                            class="btn btn-dark loginBtn"
+                                            type="submit"
+                                        >
+                                            ورود
+                                        </button>
+                                    </form>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- Insta and etc icons -->
+                        <div class="topHeader__left">
+                            <div class="icons">
+                                <span class="instagram"
+                                    ><a href=""
+                                        ><i class="fab fa-instagram"></i></a
+                                ></span>
+                                <span class="telegram">
+                                    <a href=""
+                                        ><i class="fab fa-telegram"></i
+                                    ></a>
+                                </span>
+                                <span class="facebook">
+                                    <a href="">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </span>
                             </div>
-                        </ul>
-                    </div>
-                    <div class="topHeader__left">
-                        <div class="icons">
-                            <span class="instagram"><a href=""><i class="fab fa-instagram"></i></a></span>
-                            <span class="telegram">
-                                <a href=""><i class="fab fa-telegram"></i></a>
-                            </span>
-                            <span class="facebook">
-                                <a href="">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                            </span>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- Top Header ends -->
+
+        <!-- main start -->
+        <div class="container">
+            <div class="row">
+                <main>
+                    <!-- Header start -->
+                    <section class="header">
+                        <!-- Title -->
+                        <h1>Lorem Ipsum</h1>
+                        <!-- Description -->
+                        <p>لورم ایپسوم</p>
+                    </section>
+                    <!-- Header end -->
+
+                    <!-- navbar start -->
+                    <nav class="navbar">
+                        <div class="hamburger">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <ul class="navList">
+                            <li class="navChilds active">
+                                <a href="#">خانه</a>
+                            </li>
+                            <li class="navChilds"><a href="#">درباره ما</a></li>
+                            <li class="navChilds">
+                                <a href="#">ارتباط با ما</a>
+                            </li>
+                        </ul>
+                        <div class="searchBox">
+                            <form action="" class="searchForm">
+                                <input type="text" />
+                                <button
+                                    type="submit"
+                                    onclick="s()"
+                                    style="display: none"
+                                >
+                                    asd
+                                </button>
+                            </form>
+
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </nav>
+                    <!-- navbar end -->
+                    <section class="carousel"></section>
+                    <section class="content"></section>
+                    <footer class="footer"></footer>
+                </main>
+            </div>
         </div>
-    </section>
-    <!-- Top Header ends -->
 
-    <!-- main start -->
-    <div class="container">
-        <div class="row">
-            <main>
-
-
-                <!-- Header start -->
-                <section class="header">
-                    <!-- Title -->
-                    <h1>Lorem Ipsum</h1> 
-                    <!-- Description -->
-                    <p>لورم ایپسوم</p>
-                </section>
-                <!-- Header end -->
-
-                <!-- navbar start -->
-                <nav class="navbar">
-                    <ul>
-                        <li class="active"><a href="#">خانه</a></li>
-                        <li><a href="#">درباره ما</a></li>
-                        <li><a href="#">ارتباط با ما</a></li>
-                    </ul>
-                    <div class="searchBox">
-                        <input type="text">
-                        <i class="fas fa-search"></i>
-                        
-                    </div>
-                </nav>
-                <!-- navbar end -->
-                <section class="carousel"></section>
-                <section class="content"></section>
-                <footer class="footer"></footer>
-            </main>
-        </div>
-    </div>
-
-
-
-    <!-- main end -->
-    <!-- Preprocess js files -->
-    <script src="./js/jquery-3.5.1.min.js"></script>
-    <!-- JS Part -->
-    <script src="./js/main.js"></script>
-</body>
-
+        <!-- main end -->
+        <!-- Preprocess js files -->
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <!-- JS Part -->
+        <script src="./js/main.js"></script>
+    </body>
 </html>

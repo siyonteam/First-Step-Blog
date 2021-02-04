@@ -11,4 +11,9 @@ $(function () {
         $('.userInput').val('');
         $('.passInput').val('');
     });
+    $('.hamburger').click(() => {
+        $('.hamburger').toggleClass('open');
+        $('.navList').toggleClass('open');
+        $('.navChilds').toggleClass('open');
+    });
 });
