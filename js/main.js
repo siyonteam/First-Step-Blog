@@ -1,3 +1,22 @@
+// let likeCount = document.querySelectorAll('.likeButtonCount').innerText;
+// let count = 0;
+// let likeButton = document.querySelectorAll('.likeButton');
+// let button = $('.fa-heart');
+// console.log(button);
+
+// for (let i = 0; i < likeButton.length; i++) {
+//     button[i].addEventListener('click', () => {
+//         const toggleClass = (el, className) => el.classList.toggle(className);
+//         toggleClass(button[i], 'animateLike');
+//         if (count % 2 == 0) {
+//             likeCount[i]--;
+//             likeCount[i].text(x);
+//         } else {
+//             likeCount[i]++;
+//             likeCount[i].text(x);
+//         }
+//     });
+// }
 $(function () {
     $('.login').click(() => {
         $('.loginForm').slideToggle(500);
