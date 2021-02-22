@@ -12,7 +12,7 @@ class Post(models.Model):
     )
 
     title = models.CharField(max_length=200)
-    slug = models.SlugField(max_length=200, unique_for_date='publish')
+    slug = models.SlugField(max_length=200, unique_for_date='publish' , allow_unicode=True)
     body = RichTextUploadingField()
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
@@ -22,3 +22,6 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+    
