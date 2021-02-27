@@ -1,7 +1,6 @@
-# First-Step-Blog
+# First Step Blog
 [![](https://img.shields.io/pypi/pyversions/Django.svg)](https://python.org/downloads/)
 [![](https://img.shields.io/badge/django-3.0%20%7C%203.1-green)](https://djangoproject.com/)
-[![](https://img.shields.io/apm/l/vim-mode.svg)](https://choosealicense.com/licenses/mit/)
 [![](https://img.shields.io/apm/l/vim-mode.svg)](https://choosealicense.com/licenses/mit/)
 
 Django Full front back Blog
