@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/Style.min.css" />
+    <link rel="stylesheet" href="css/Style.css" />
 
 </head>
 
@@ -191,8 +191,8 @@
                                 <!-- Content Information -->
                                 <div class="content__footer">
                                     <div class="content__footer--information">
-                                        <p>نویسنده  </br><span>سیامک علیپور</span></p>
-                                        <p>تاریخ  </br><span>1398.10.09</span> </p>
+                                        <p>نویسنده </br><span>سیامک علیپور</span></p>
+                                        <p>تاریخ </br><span>1398.10.09</span> </p>
                                     </div>
                                     <span id="likeButton" class="content__footer--likeButton">
                                         <i class="fas fa-heart">
@@ -204,6 +204,87 @@
 
                             </div>
                         </div>
+                    </div>
+
+                </section>
+                <div class="commentToggle">
+                    دیدگاه ها
+                </div>
+                <section class="comment">
+
+                    <div class="col-10">
+                        <form action="" class="commenting">
+                            {% csrf_token %}
+                            {{ myform.media }}
+                            {{ myform.as_p }}
+                    
+                            <input type="submit" />
+                        </form>
+                        <div class="comment__box">
+                            <div class="comment__box--header">
+                                <div class="userAvatar">
+                                    <img src="https://i.picsum.photos/id/890/200/300.jpg?hmac=INUR_Xore_GSEXH-cqmLjy_lJcK8tslVvXwwac-9o8M"
+                                        alt="">
+                                </div>
+                                <h4>سیامک علیپور</h4>
+                                <p>تاریخ : <span>1398/05/05</span></p>
+                            </div>
+                            <div class="comment__box--content">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                    می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                    متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                                    الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید
+                                    داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان
+                                    مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود
+                                    طراحی اساسا مورد استفاده قرار گیرد.</p>
+                            </div>
+                            <div class="comment__box--footer tempFooter">
+                                <button class="btn btn-dark send_comment">پاسخ</button>
+                            </div>
+                            <form action="" class="answerForm">
+                                {% csrf_token %}
+                                {{ myform.media }}
+                                {{ myform.as_p }}
+                    
+                                <input type="submit" />
+                            </form>
+                            <!-- reply.html -->
+                            <div class="comment__box--reply">
+                                <div class="comment__box--reply_header">
+                                    <div class="userAvatar">
+                                        <img src="https://i.picsum.photos/id/890/200/300.jpg?hmac=INUR_Xore_GSEXH-cqmLjy_lJcK8tslVvXwwac-9o8M"
+                                            alt="">
+                                    </div>
+                                    <h4>سیامک علیپور</h4>
+                                    <p>تاریخ : <span>1398/05/05</span></p>
+                                </div>
+                                <div class="comment__box--reply_content">
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                        برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                        می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                        متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                                        الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید
+                                        داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان
+                                        مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود
+                                        طراحی اساسا مورد استفاده قرار گیرد.</p>
+                                </div>
+                                <div class="comment__box--reply_footer tempFooter">
+                                    <button class="btn btn-dark send_comment">پاسخ</button>
+                                </div>
+                                <form action="" class="answerForm">
+                                    {% csrf_token %}
+                                    {{ myform.media }}
+                                    {{ myform.as_p }}
+                        
+                                    <input type="submit" />
+                                </form>
+                            </div>
+                        </div>
+                    
+                    
                     </div>
 
                 </section>
@@ -222,7 +303,7 @@
 
 
     <!-- JS Part -->
-    <script src="./js/main.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
