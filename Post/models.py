@@ -40,7 +40,7 @@ class Comment(models.Model):
     reply = models.ForeignKey('self' , on_delete=models.CASCADE , related_name="rcomment" , null = True , blank = True )
     author = models.CharField(max_length=200)
     email = models.EmailField()
-    body = RichTextField()                             
+    body = models.TextField()                             
     created = models.DateTimeField(auto_now_add=True)
 
     class Meta :

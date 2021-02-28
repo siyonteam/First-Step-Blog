@@ -5,42 +5,42 @@
 {% block content %}
 
 
-    <div class="col-10">
-        <div class="row">
-            <div class="content__Box">
-                <!-- Content Title -->
-                <h1>{{ article.title }}</h1>
-                <div class="content__header">
+<div class="col-10">
+    <div class="row">
+        <div class="content__Box">
+            <!-- Content Title -->
+            <h1>{{ article.title }}</h1>
+            <div class="content__header">
 
-                    <div class="content__header--text">
-                        <p>
-                            {{ article.body |safe}}
-                        </p>
-                    </div>
+                <div class="content__header--text">
+                    <p>
+                        {{ article.body |safe}}
+                    </p>
                 </div>
-                <!-- 0311310333412 -->
-                <!-- Content Information -->
-                <div class="content__footer">
-                    <div class="content__footer--information">
-                        <p>نویسنده  </br><span>{{ article.author }}</span></p>
-                        <p>تاریخ  </br><span>{{ article.publish }}</span> </p>
-                    </div>
-                    <span id="likeButton" class="content__footer--likeButton">
-                        <i class="fas fa-heart">
-                            <!-- <span class="likeButtonCount">0</span> -->
-                        </i>
-                    </span>
-
+            </div>
+            <!-- 0311310333412 -->
+            <!-- Content Information -->
+            <div class="content__footer">
+                <div class="content__footer--information">
+                    <p>نویسنده </br><span>{{ article.author }}</span></p>
+                    <p>تاریخ </br><span>{{ article.publish }}</span> </p>
                 </div>
+                <span id="likeButton" class="content__footer--likeButton">
+                    <i class="fas fa-heart">
+                        <!-- <span class="likeButtonCount">0</span> -->
+                    </i>
+                </span>
 
             </div>
+
         </div>
     </div>
+</div>
+<div class="commentToggle">
+    دیدگاه ها
+</div>
+<section class="comment">
+    {% include './Comment.html' %}
+</section>
 
-    <form>
-        {% csrf_token %}
-        {{ myform.media }}
-        {{ myform.as_p }}
-        <input type="submit"/>
-    </form>
 {% endblock content %}
