@@ -548,12 +548,46 @@ main {
   display: none;
 }
 
-.comment .answerForm {
-  background-color: red;
-  width: 100%;
+.comment .commenting {
+  width: 80%;
   margin: auto;
-  height: 200px;
+  height: auto;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment .commenting .answerForm__body {
+  width: 80%;
+  box-shadow: 0px 2px 39px -14px rgba(0, 0, 0, 0.2);
+  outline: none;
+  border-radius: 15px;
+  padding: 7px;
+  border: 1px solid #e0e0e0;
+}
+
+.comment .commenting .answerForm__name {
+  box-shadow: 0px 2px 39px -14px rgba(0, 0, 0, 0.2);
+  outline: none;
+  margin: auto;
+  border-radius: 15px;
+  padding: 7px;
+  border: 1px solid #e0e0e0;
+}
+
+.comment .commenting .answerForm__email {
+  box-shadow: 0px 2px 39px -14px rgba(0, 0, 0, 0.2);
+  outline: none;
+  border-radius: 15px;
+  margin: auto;
+  padding: 7px;
+  border: 1px solid #e0e0e0;
+}
+
+.comment .commenting button {
+  float: right;
+  margin-top: 10px;
 }
 
 .comment__box {
@@ -681,14 +715,6 @@ main {
   margin: 10px;
 }
 
-.comment__box--reply .commenting {
-  background-color: red;
-  width: 90%;
-  margin: auto;
-  height: 200px;
-  display: none;
-}
-
 .comment__box--footer {
   margin-right: auto;
   margin-top: 10px;
@@ -719,12 +745,46 @@ main {
 }
 
 .answerForm {
-  background-color: #dadada;
-  width: 95%;
+  background-color: #c4c4c4;
+  width: 90%;
   margin: auto;
-  height: 200px;
+  height: auto;
   display: none;
   border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answerForm .answerForm__body {
+  width: 80%;
+  box-shadow: 0px 2px 39px -14px rgba(0, 0, 0, 0.2);
+  outline: none;
+  border-radius: 15px;
+  padding: 7px;
+  border: 1px solid #e0e0e0;
+}
+
+.answerForm .answerForm__name {
+  box-shadow: 0px 2px 39px -14px rgba(0, 0, 0, 0.2);
+  outline: none;
+  margin: auto;
+  border-radius: 15px;
+  padding: 7px;
+  border: 1px solid #e0e0e0;
+}
+
+.answerForm .answerForm__email {
+  box-shadow: 0px 2px 39px -14px rgba(0, 0, 0, 0.2);
+  outline: none;
+  border-radius: 15px;
+  margin: auto;
+  padding: 7px;
+  border: 1px solid #e0e0e0;
+}
+
+.answerForm button {
+  float: right;
+  margin-top: 10px;
 }
 
 * {

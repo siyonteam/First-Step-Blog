@@ -36,7 +36,23 @@ $(function () {
         $('.navChilds').toggleClass('open');
     });
     $('.send_comment').click(function () {
-        $(this).parent('.tempFooter').next('.answerForm').slideToggle();
+        if (!$(this).parent('.tempFooter').next('.answerForm').is(':visible')) {
+            $(this).parent('.tempFooter').next('.answerForm').slideToggle();
+            $(this)
+                .parent('.tempFooter')
+                .next('.answerForm')
+                .css('display', 'flex');
+        } else {
+            $(this)
+                .parent('.tempFooter')
+                .next('.answerForm')
+                .slideToggle(() => {
+                    $(this)
+                        .parent('.tempFooter')
+                        .next('.answerForm')
+                        .css('display', 'none');
+                });
+        }
     });
     $('.commentToggle').click(() => {
         if (!$('.comment').is(':visible')) {
