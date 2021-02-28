@@ -36,4 +36,11 @@
             </div>
         </div>
     </div>
+
+    <form>
+        {% csrf_token %}
+        {{ myform.media }}
+        {{ myform.as_p }}
+        <input type="submit"/>
+    </form>
 {% endblock content %}

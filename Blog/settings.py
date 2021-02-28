@@ -137,7 +137,10 @@ MEDIA_URL = '/media/'
 
 # CKEDITOR CONFIGS
 CKEDITOR_CONFIGS = {
-    'default': {
+    'Post': {
         'toolbar': 'full',
+    },
+    'default':{
+
     },
 }
