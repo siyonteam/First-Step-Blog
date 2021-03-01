@@ -1,16 +1,5 @@
 <div class="col-10">
-    <form>
-        {% csrf_token %}
-        <label for="{{ myform.body.id_for_label }}">body subject:</label>
-        {{ myform.body}}
-        <div class="">
-            <label for="{{ myform.author.id_for_label }}">author subject:</label>
-            {{ myform.author}}
-            <label for="{{ myform.email.id_for_label }}">Email subject:</label>
-            {{ myform.email}}
-        <div>
-                <button class="btn btn-primary">Send</button>
-    </form>
+    
     <div class="comment__box">
         <div class="comment__box--header">
             <div class="userAvatar">

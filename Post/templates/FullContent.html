@@ -36,9 +36,22 @@
         </div>
     </div>
 </div>
+
 <div class="commentToggle">
     دیدگاه ها
 </div>
+<form class="commenting"> 
+    {% csrf_token %}
+    <!-- <label for="{{ myform.body.id_for_label }}">body subject:</label> -->
+    {{ myform.body}}
+    <div class="answerForm__inputs">
+        <!-- <label for="{{ myform.author.id_for_label }}">author subject:</label> -->
+        {{ myform.author}}
+        <!-- <label for="{{ myform.email.id_for_label }}">Email subject:</label> -->
+        {{ myform.email}}
+    <div>
+        <button class="btn btn-primary">Send</button>
+</form>
 <section class="comment">
     {% include './Comment.html' %}
 </section>

@@ -8,8 +8,8 @@ class CommentForm(forms.ModelForm):
         model = Comment
         fields = ('body','author','email')
         widgets = {
-            'author': forms.TextInput(attrs={'class': 'answerForm__name'}),
-            'email': forms.EmailInput(attrs={'class': 'answerForm__email'}),
-            'body': forms.Textarea(attrs={'class': 'answerForm__body'}),
+            'author': forms.TextInput(attrs={'class': 'answerForm__name' , 'placeholder':'name' }),
+            'email': forms.EmailInput(attrs={'class': 'answerForm__email' , 'placeholder':'email'}),
+            'body': forms.Textarea(attrs={'class': 'answerForm__body' , 'placeholder':'Message....'}),
         }
 
