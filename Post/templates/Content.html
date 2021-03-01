@@ -23,7 +23,7 @@
                     <div class="content__footer">
                         <div class="content__footer--information">
                             <p>نویسنده : <span>{{ content.author.username }}</span></p>
-                            <p>تاریخ : <span>{{ content.publish }}</span> </p>
+                            <p>تاریخ : <span>{{ content.publish|date:"SHORT_DATE_FORMAT" }}</span> </p>
                         </div>
                         <span class="content__footer--goToContinue">
                             <a href="{{ content.get_absolute_url }}">

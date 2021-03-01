@@ -23,7 +23,7 @@
             <div class="content__footer">
                 <div class="content__footer--information">
                     <p>نویسنده </br><span>{{ article.author }}</span></p>
-                    <p>تاریخ </br><span>{{ article.publish }}</span> </p>
+                    <p>تاریخ </br><span>{{ article.publish|date:"SHORT_DATE_FORMAT" }}</span> </p>
                 </div>
                 <span id="likeButton" class="content__footer--likeButton">
                     <i class="fas fa-heart">
@@ -42,7 +42,7 @@
 </div>
 
 <section class="comment">
-    <form class="commenting"> 
+    <form action="{% url 'Post:add_comment' article.id %}"  method="POST"    class="commenting"> 
         {% csrf_token %}
         {{ myform.body}}
         <div class="answerForm__inputs">
@@ -51,7 +51,7 @@
         </div>
             <button class="btn btn-primary">Send</button>
     </form>
-    {% include './Comment.html' %}
+    {% include 'Comment.html' %}
 </section>
 
 {% endblock content %}
