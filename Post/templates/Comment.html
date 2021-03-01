@@ -1,5 +1,4 @@
 <div class="col-10">
-    
     <div class="comment__box">
         <div class="comment__box--header">
             <div class="userAvatar">
@@ -23,15 +22,15 @@
         <div class="comment__box--footer tempFooter">
             <button class="btn btn-dark send_comment">پاسخ</button>
         </div>
-        <form action="" class="answerForm">
+        <form class="answerForm"> 
             {% csrf_token %}
-            {{ myform }}
-
-            <button type="submit" class="btn btn-primary">Send</button>
+            {{ myform.body}}
+            <div class="answerForm__inputs">
+                {{ myform.author}}
+                {{ myform.email}}
+            </div>
+            <button class="btn btn-primary">Send</button>
         </form>
-
         {% include './Reply.html' %}
     </div>
-
-
 </div>
