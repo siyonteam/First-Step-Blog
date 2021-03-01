@@ -543,6 +543,7 @@ main {
   margin: auto;
   height: auto;
   margin-bottom: 30px;
+  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #e0e0e0;
@@ -560,6 +561,7 @@ main {
 }
 
 .commenting .answerForm__inputs {
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
