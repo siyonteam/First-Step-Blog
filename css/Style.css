@@ -547,6 +547,8 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .commenting .answerForm__body {
@@ -558,9 +560,11 @@ main {
   border: 1px solid #e0e0e0;
   min-height: 100px;
   height: 100px;
+  max-height: 300px;
 }
 
 .commenting .answerForm__inputs {
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -569,6 +573,7 @@ main {
 }
 
 .commenting .answerForm__inputs .answerForm__name {
+  width: 100%;
   box-shadow: 0px 2px 39px -14px rgba(0, 0, 0, 0.2);
   outline: none;
   margin: auto;
@@ -578,6 +583,7 @@ main {
 }
 
 .commenting .answerForm__inputs .answerForm__email {
+  width: 100%;
   box-shadow: 0px 2px 39px -14px rgba(0, 0, 0, 0.2);
   outline: none;
   border-radius: 15px;
@@ -587,7 +593,6 @@ main {
 }
 
 .commenting button {
-  float: right;
   margin-top: 10px;
 }
 
@@ -756,14 +761,15 @@ main {
 }
 
 .answerForm {
-  background-color: #c4c4c4;
-  width: 90%;
+  width: 100%;
   margin: auto;
   height: auto;
+  margin-bottom: 30px;
   display: none;
-  border-radius: 10px;
   flex-direction: column;
   align-items: center;
+  background-color: #e0e0e0;
+  padding: 10px;
 }
 
 .answerForm .answerForm__body {
@@ -775,9 +781,20 @@ main {
   border: 1px solid #e0e0e0;
   min-height: 100px;
   height: 100px;
+  max-height: 300px;
 }
 
-.answerForm .answerForm__name {
+.answerForm .answerForm__inputs {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.answerForm .answerForm__inputs .answerForm__name {
+  width: 100%;
   box-shadow: 0px 2px 39px -14px rgba(0, 0, 0, 0.2);
   outline: none;
   margin: auto;
@@ -786,7 +803,8 @@ main {
   border: 1px solid #e0e0e0;
 }
 
-.answerForm .answerForm__email {
+.answerForm .answerForm__inputs .answerForm__email {
+  width: 100%;
   box-shadow: 0px 2px 39px -14px rgba(0, 0, 0, 0.2);
   outline: none;
   border-radius: 15px;
@@ -796,7 +814,6 @@ main {
 }
 
 .answerForm button {
-  float: right;
   margin-top: 10px;
 }
 
