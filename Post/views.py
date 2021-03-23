@@ -47,5 +47,13 @@ def add_reply(request , post_pk , comment_pk):
         Comment(author=name , email=email , body = body , reply=comment).save()
         messages.success(request , "دیدگاه شما با موفقیت ثبت شد" )
         return redirect(post)
+
+def search(request):
+    search = request.GET.get('q')
+    contents = Post.objects.filter(title__contains = search)
+    context = {
+        "contents":contents,
+    }
+    return render(request,'Content.html',context)
         
     
